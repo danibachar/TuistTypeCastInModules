@@ -12,13 +12,13 @@ This is a Tuist based project that presents a behaviour I could not fully explai
 
 Note the protocol defines a static propery - and this is where I think the difference of the behaviour I''m going to describe
 
-### Applicaitons
-Under the Apps folder are 3 applications. The applications run the same code.
-The difference is in the way the applications are importing modules described above
+  ## Applicaitons
+  Under the Apps folder are 3 applications. The applications run the same code.
+  The difference is in the way the applications are importing modules described above
 
-- **AppSPM** - under the folder `JustWithSPM` there is a simple old-school project file that defines and uses the two package using SPM directly
-- **AppDependencies** - under the folder `WithDepdendenciesDotSwift` there is a simple project file that defines and uses the two package using Dependencies.swift - as external dependenceis
-- **AppDependencies2** - under the folder `WithDepdendenciesDotSwiftConformanceAtTheAppLevel` there is a simple project file that defines and uses the two package using Dependencies.swift - as external dependenceis
+  - **AppSPM** - under the folder `JustWithSPM` there is a simple old-school project file that defines and uses the two package using SPM directly
+  - **AppDependencies** - under the folder `WithDepdendenciesDotSwift` there is a simple project file that defines and uses the two package using Dependencies.swift - as external dependenceis
+  - **AppDependencies2** - under the folder `WithDepdendenciesDotSwiftConformanceAtTheAppLevel` there is a simple project file that defines and uses the two package using Dependencies.swift - as external dependenceis
 
 All the applications are running the same code - calling `print("DB: \(String(describing: Flag.castAndGetAppID()))")` at the end of the `didFinishLaunchingWithOptions` of the AppDelegate.
 
