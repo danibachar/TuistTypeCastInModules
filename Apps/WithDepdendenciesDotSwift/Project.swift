@@ -3,7 +3,6 @@ import ProjectDescriptionHelpers
 
 let project = Project(
     name: "AppDependencies",
-    settings: .projectSettings,
     targets: [
         Target(
             name: "AppDependencies",
@@ -15,8 +14,7 @@ let project = Project(
             dependencies: [
                 .external(name: "Bootstrap"),
                 .external(name: "Flag"),
-            ],
-            settings: .targetSettings
+            ]
         )
     ]
 )

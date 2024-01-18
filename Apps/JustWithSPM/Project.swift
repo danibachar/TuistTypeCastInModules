@@ -7,7 +7,6 @@ let project = Project(
         .local(path: "../../Modules/LocalSwiftPackageBootstrap/"),
         .local(path: "../../Modules/LocalSwiftPackageFlag/"),
     ],
-    settings: .projectSettings,
     targets: [
         Target(
             name: "AppSPM",
@@ -19,8 +18,7 @@ let project = Project(
             dependencies: [
                 .package(product: "Bootstrap"),
                 .package(product: "Flag"),
-            ],
-            settings: .targetSettings
+            ]
         )
     ]
 )

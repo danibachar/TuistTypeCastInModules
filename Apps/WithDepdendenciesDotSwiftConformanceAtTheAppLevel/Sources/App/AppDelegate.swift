@@ -1,5 +1,4 @@
 import Flag
-import Bootstrap
 import UIKit
 
 @main
