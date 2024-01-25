@@ -93,3 +93,4 @@ iOSInjectionProject/
 *.xcodeproj
 *.xcworkspace
 **/Derived/*
+*.resolved
