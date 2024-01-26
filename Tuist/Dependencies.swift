@@ -2,7 +2,11 @@
 import ProjectDescription
 
 let dependencies = Dependencies(
-    swiftPackageManager: .init(
+    swiftPackageManager: SwiftPackageManagerDependencies(
+        productTypes: [
+            "Bootstrap": .framework,
+            "Flag": .framework,
+        ],
         projectOptions: [:]
     ),
     platforms: [.iOS, .watchOS]
