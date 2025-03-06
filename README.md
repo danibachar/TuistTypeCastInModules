@@ -28,6 +28,6 @@ I added the **AppDependencies2** to show that if I move the code from the `Local
 To run and see the diffrrence:
 1) Clone the repo
 2) Install [Tuist](https://docs.tuist.io/documentation/tuist/installation)
-3) Run `tuist fetch` from the root of the repo
+3) Run `tuist install` from the root of the repo
 4) Run `tuist generate` from the root of the repo
 5) Run the applicaitons and see the console log out put with the `DB:` prefix
