@@ -8,7 +8,7 @@ let project = Project(
         .local(path: "../../Modules/LocalSwiftPackageFlag/"),
     ],
     targets: [
-        Target(
+        .target(
             name: "AppSPM",
             destinations: [.iPad, .iPhone],
             product: .app,

@@ -9,6 +9,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         let viewController = UIViewController(nibName: nil, bundle: nil)
         viewController.view.backgroundColor = .blue
+        
+        let label = UILabel(frame: .init(x: 100, y: 100, width: 100, height: 100))
+        label.text = Flag.castAndGetAppID() ?? "none"
+        label.textColor = .white
+        viewController.view.addSubview(label)
+        
         window?.rootViewController = viewController
         window?.makeKeyAndVisible()
         
@@ -18,6 +24,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
-extension SecurityClient: MyConfiguration {
+extension SecurityClient: @retroactive MyConfiguration {
     public static var appID: String { "my_app_id" }
 }

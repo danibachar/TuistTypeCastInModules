@@ -4,7 +4,7 @@ import ProjectDescriptionHelpers
 let project = Project(
     name: "AppDependencies",
     targets: [
-        Target(
+        .target(
             name: "AppDependencies",
             destinations: [.iPad, .iPhone],
             product: .app,
